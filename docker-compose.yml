@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  pyspark:
+    image: easewithdata/pyspark-jupyter-lab-old
+    container_name: pyspark-jupyter
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    
+    volumes:
+      - D:\pyspark-project:/home/jupyter
+    restart: unless-stopped
