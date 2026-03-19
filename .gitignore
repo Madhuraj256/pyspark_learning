@@ -1,3 +1,25 @@
-.ipynb checkpoints/
-_pycache__/
+# .gitignore — add these!
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
 *.pyc
+
+# Spark output data — ADD THIS!
+data/output/
+data/input/
+
+# Spark internal files
+_SUCCESS
+*.crc
+part-*.csv
+part-*.parquet
+part-*.json
+
+# General data files
+*.csv
+*.parquet
+*.orc
+*.json
